@@ -17,10 +17,15 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# PSD, AI
+# PSD, AI, JPG, PNG
 *.psd
 *.ai
+*.jpeg
+*.jpg
+*.png
 
+# Sublime-project, sublime-workspace
+*.sublime-*
 
 # =========================
 # Operating System Files
