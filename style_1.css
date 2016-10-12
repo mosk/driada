@@ -1,0 +1,215 @@
+body {
+  font-family: "HelveticaRegular", sans-serif;
+  font-size: 14px;
+  color: #000000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header {
+  height: 674px;
+  background: #222222 url(../img/page-header--bg.jpg) no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.page-header .wrapper {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 20px 0;
+}
+
+.logo {
+  display: block;
+  text-align: center;
+}
+
+.nav {
+  text-align: right;
+}
+
+.nav__link {
+  display: inline-block;
+  padding-left: 20px;
+  text-transform: uppercase;
+}
+
+.nav__link a {
+  line-height: 28px;
+}
+
+.nav__link a,
+.page-header__contacts a {
+  color: #ffffff;
+}
+
+.page-header__button,
+.page-header__phone {
+  display: block;
+}
+
+.page-header__button {
+  font-family: "HelveticaLightItalic", sans-serif;
+  text-decoration: underline;
+}
+
+.page-header__phone {
+  font-size: 24px;
+}
+
+.services {
+  max-width: 660px;
+  margin: 380px auto;
+  text-align: center;
+  list-style-type: none;
+}
+
+.services__item {
+  text-transform: uppercase;
+}
+
+.page-header .title {
+  position: relative;
+  bottom: -10px;
+  margin: 0;
+  font-family: "Arial Black";
+  font-size: 154px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+}
+
+.page-header .text {
+  position: relative;
+  bottom: 55px;
+  margin: 0;
+  font-family: "HelveticaRegular";
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #0199ec;
+}
+
+/* about */
+.about .title {
+  margin-top: 120px;
+  text-align: center;
+}
+
+.about .text {
+  text-align: center;
+  font-size: 16px;
+}
+
+.about .title {
+  margin-top: 120px;
+}
+
+.about .item {
+  margin-top: 90px;
+}
+
+.about .item .text {
+  min-height: 80px;
+  padding: 30px 10px;
+  overflow: hidden;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  background: #eaeaeb;
+}
+
+/* garden */
+.garden {
+  margin-top: 80px;
+}
+
+.garden .slider__item {
+  max-height: 340px;
+  overflow: hidden;
+}
+
+.garden__description .title,
+.ready-solution .title,
+.contacts-info .title {
+  margin-top: 0;
+  font-family: "HelveticaThin", sans-serif;
+  font-size: 48px;
+  line-height: 60px;
+}
+
+.garden__description .text,
+.ready-solution .text {
+  color: #888888;
+  line-height: 18px;
+}
+
+.garden__description .button,
+.ready-solution .button {
+  display: inline-block;
+  height: 50px;
+  min-width: 140px;
+  padding: 15px 20px;
+  text-align: center;
+  background: #65abd0;
+  color: #ffffff;
+}
+
+.garden__designer-caption {
+  font-family: "HelveticaMedium", sans-serif;
+}
+
+/* ready-solution */
+.ready-solution {
+  margin-top: 80px;
+}
+
+/* feedback */
+.feedback {
+  position: relative;
+  margin-top: 80px;
+  background: rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.feedback:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 264px;
+  width: 100%;
+  background: url(../img/page-header--bg.jpg) no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.feedback .title {
+  font-size: 36px;
+  font-family: "HelveticaThin", sans-serif;
+  text-align: center;
+  margin-top: 264px;
+}
+
+/* contacts-info */
+.contacts-info {
+  text-align: center;
+}
+
+.contacts .text {
+  color: #888888;
+  font-size: 14px;
+}
+
+/* map */
+.map {
+  height: 400px;
+  background: url(../img/page-header--bg.jpg) no-repeat;
+}
+
+.social {
+  text-align: right;
+}

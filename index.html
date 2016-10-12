@@ -13,11 +13,11 @@
         <div class="row">
 
           <div class="col-xs-4 col-xs-push-4">
-            <a href="#" class="logo"><img src="img/logo.png" width="72" alt="Студия ландшафтного дизайна «Дриада»"></a>
+            <a href="#" class="logo"><img src="img/logo.png" alt="Студия ландшафтного дизайна «Дриада»"></a>
           </div>
 
           <div class="col-xs-4 col-xs-push-4">
-            <nav class="nav">
+            <nav class="nav menu">
               <ul>
                 <li class="nav__link"><a href="#">О нас</a></li>
                 <li class="nav__link"><a href="projects.html">Проекты</a></li>
@@ -31,8 +31,8 @@
 
           <div class="col-xs-4 col-xs-pull-8">
             <div class="page-header__contacts">
-              <a href="tel:+78127481404" class="page-header__phone">8 (812) 748-14-04</a><br>
-              <a href="#" class="page-header__button">Закажите бесплатный звонок!</a>
+              <a href="#" class="button hidden-xs">Закажите бесплатный звонок!</a><br>
+              <a href="tel:+78127481404" class="phone">8 (812) 748&#8209;14&#8209;04</a>
             </div>
           </div>
 
@@ -43,47 +43,68 @@
     <div class="container">
       <div class="row">
         <ul class="services">
-          <li class="services__item col-xs-6 col-md-3">Проектирование</li>
-          <li class="services__item col-xs-6 col-md-3">Благоустройство</li>
-          <li class="services__item col-xs-6 col-md-3">Озеленение</li>
-          <li class="services__item col-xs-6 col-md-3">Уход за садом</li>
+          <li class="services__item services__design col-xs-6 col-md-3">Проектирование</li>
+          <li class="services__item services__beautification col-xs-6 col-md-3">Благоустройство</li>
+          <li class="services__item services__greening col-xs-6 col-md-3">Озеленение</li>
+          <li class="services__item services__gardening col-xs-6 col-md-3">Уход за садом</li>
         </ul>
-        <h2 class="page-header__title">Driada</h2>
-        <p class="page-header__text">Создаём, преображаем, ухаживаем</p>
+        <h2 class="title">Driada</h2>
+        <p class="text">Создаём, преображаем, ухаживаем</p>
       </div>
     </div>
   </header>
 
   <main class="page-main">
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
         <section class="about">
           <h2 class="title">Мы студия ландшафтного дизайна<br>основанная в 2007 году в городе Санкт-Петербурге.</h2>
           <h1 class="text">Предоставляем услуги высокого качества по благоустройству,<br>проектированию, озеленению и уходу за вашим садом.</h1>
           <div class="col-xs-12 col-md-4">
-            <a class="about__team" href="#">Команда профессионалов</a>
+            <a class="about__team item" href="#">
+              <figure>
+                <img src="img/about__team--bg.jpg">
+                <figcaption class="text">Команда профессионалов</figcaption>
+              </figure>
+            </a>
           </div>
 
           <div class="col-xs-12 col-md-4">
-            <a class="about__expo" href="#">Мы на международных выставках</a>
+            <a class="about__expo item" href="#">
+              <figure>
+                <img src="img/about__team--bg.jpg">
+                <figcaption class="text">Мы на международных выставках</figcaption>
+              </figure>
+            </a>
           </div>
 
           <div class="col-xs-12 col-md-4">
-            <a class="about__reviews" href="#">Отзывы о нас</a>
+            <a class="about__reviews item" href="#">
+              <figure>
+                <img src="img/about__team--bg.jpg">
+                <figcaption class="text">Отзывы о нас</figcaption>
+              </figure>
+            </a>
           </div>
         </section>
       </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
         <section class="garden">
-          <div class="col-xs-12 col-md-6">
-            <h2 class="title">Сад с прудом</h2>
-            <p class="text">Полное воплощение проекта под ключ. Строительство искусственного водоема площадью зеркала 300 м2 с зарыблением. Строительство декоративного мостика, освещение, полив, ливневая канализация, посадка растений, уход.</p>
+          <div class="col-xs-12 col-md-4 col-md-push-6">
+            <div class="garden__description">
+              <h2 class="title">Сад с прудом</h2>
+              <p class="text">Полное воплощение проекта под ключ. Строительство искусственного водоема площадью зеркала 300 м2 с зарыблением. Строительство декоративного мостика, освещение, полив, ливневая канализация, посадка растений, уход.</p>
+              <a href="projects.html" class="button">Все проекты</a>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-md-6 col-md-pull-4">
             <div class="slider">
               <div class="slider__item">
-                <img src="#" alt="Фотография сада с прудом">
+                <img src="img/garden__slider.jpg" alt="Фотография сада с прудом">
               </div>
               <div class="slider-nav">
                 <button class="slider__button slider__button--prev">туда</button>
@@ -92,24 +113,23 @@
             </div>
           </div>
 
-          <div class="col-md-6 hidden-xs hidden-sm">
+          <div class="col-md-2 hidden-xs hidden-sm">
             <figure class="garden__designer">
               <img src="img/garden__designer--photo.png" alt="Фотография дизайнера" width="89" height="141">
               <figcaption class="garden__designer-caption">
-                <span>Наталья</span><br>дизайнер проекта
+                <b>Наталья</b><br>дизайнер<br>проекта
               </figcaption>
             </figure>
-            <a href="projects.html" class="button">Все проекты</a>
           </div>
         </section>
       </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
         <section class="ready-solution">
           <div class="col-xs-12 col-md-6">
-            <h2 class="title">Готовые решения для вашего сада</h2>
+            <h2 class="title">Готовые решения <br>для вашего сада</h2>
             <p class="text">Мы предлагаем услугу быстрого озеленения и ландшафтного дизайна с готовыми композиционными решениями из растений, камней, отсыпки, декоративных элементов и газона.</p>
             <a href="services.html" class="button">Все варианты</a>
           </div>
@@ -117,7 +137,7 @@
           <div class="col-md-6 hidden-xs hidden-sm">
             <div class="slider">
               <div class="slider__item">
-                <img src="#" alt="Фотография сада">
+                <img src="img/garden__slider.jpg" alt="Фотография сада">
               </div>
               <div class="slider-nav">
                 <button class="slider__pagination-button slider__pagination-button--active">1-я кнопка</button>
@@ -131,15 +151,15 @@
       </div>
     </div>
 
-    <div class="container">
-      <div class="row">
-        <label for="feedback-mail">
-          <div class="feedback">
+    <div class="feedback">
+      <div class="container">
+        <div class="row">
+          <label for="feedback-mail">
             <h3 class="title">Первая консультация и выезд дизайнера бесплатно</h3>
-            <div class="col-xs-12 col-md-4">
-              <p class="text">Напишите нам и мы вам перезвоним</p>
-            </div>
             <form action="#" class="feedback-form">
+              <div class="col-xs-12 col-md-4">
+                <p class="text">Напишите нам и мы вам перезвоним</p>
+              </div>
               <div class="col-xs-12 col-md-4">
                 <input type="text" name="feedback-mail" id="feedback-mail">
               </div>
@@ -147,12 +167,12 @@
                 <input type="submit" name="feedback-button" id="feedback-button" value="отправить">
               </div>
             </form>
-          </div>
-        </label>
+          </label>
+        </div>
       </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
         <div class="contacts">
           <div class="contacts-info">
@@ -162,7 +182,7 @@
             д, 18, кор. 2, офис 226<br>
             телефон +7 (812) 748-17-04<br>
             e-mail: info@driada.ru</p>
-            <p class="title"><span class="title title--weight">Мы рады видеть Вас у нас в офисе!</span><br>
+            <p class="text"><b>Мы рады видеть Вас у нас в офисе!</b><br>
             с пн.-пт. с 11-19</p>
           </div>
           <div class="col-md-6 col-xs-12">
@@ -177,15 +197,19 @@
   </main>
 
   <footer class="page-footer">
-    <div class="col-md-6 hidden-xs hidden-sm">
-      <p class="copyright">© 2016 – Все права защищены.</p>
-    </div>
-    <div class="col-xs-12 col-md-6">
-      <div class="social">
-        <p class="text hidden-xs hidden-sm">Мы в соцсетях:</p>
-        <a href="facebook.com" class="facebook text-hide">фейсбук</a>
-        <a href="twitter.com" class="twitter text-hide">твиттер</a>
-        <a href="vk.com" class="vkontakte text-hide">вконтакте</a>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 hidden-xs hidden-sm">
+          <p class="copyright">© 2016 – Все права защищены.</p>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="social">
+            <p class="text hidden-xs hidden-sm">Мы в соцсетях:</p>
+            <a href="facebook.com" class="facebook text-hide">фейсбук</a>
+            <a href="twitter.com" class="twitter text-hide">твиттер</a>
+            <a href="vk.com" class="vkontakte text-hide">вконтакте</a>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
