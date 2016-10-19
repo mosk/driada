@@ -15,6 +15,14 @@
 }
 
 @font-face {
+  font-family: 'HelveticaLight';
+          src: url('../font/Helvetica/HelveticaLight/HelveticaLight.eot');
+          src: url('../font/Helvetica/HelveticaLight/HelveticaLight.eot?#iefix') format('embedded-opentype'),
+               url('../font/Helvetica/HelveticaLight/HelveticaLight.woff') format('woff'),
+               url('../font/Helvetica/HelveticaLight/HelveticaLight.ttf') format('truetype')
+}
+
+@font-face {
   font-family: 'HelveticaLightItalic';
           src: url('../font/Helvetica/HelveticaLightItalic/HelveticaLightItalic.eot');
           src: url('../font/Helvetica/HelveticaLightItalic/HelveticaLightItalic.eot?#iefix') format('embedded-opentype'),
@@ -45,7 +53,7 @@ img {
 
   .page-header {
     height: 455px;
-    background: #001500 url(../img/bg_page-header_w375_1x.jpg) no-repeat 50% 50% scroll;
+    background: #001500 url(../img/bg_page-header_w375_1x.jpg) no-repeat left 50%;
   }
 
 /* bg for retina *
@@ -125,13 +133,15 @@ img {
 
 /* services */
   .services {
+    margin: 0 15%;
+    padding: 95px 0 0;
   }
 
   .services__item {
-    margin-top: 80px;
+    padding: 100px 0 0;
     color: #ffffff;
     list-style-type: none;
-    background: grey;
+    text-align: center;
   }
 
   .services__design:before,
@@ -140,9 +150,299 @@ img {
   .services__gardening:before {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
+    left: 50%;
     width: 94px;
     height: 82px;
-    background: url(../img/services__desig.png) 50% 50% no-repeat;
+    background: url(../img/services__design.png) 50% 50% no-repeat;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
   }
+
+  .title,
+  .text {
+    margin: 0;
+  }
+
+  .page-header .title,
+  .page-header .text {
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .page-header .title {
+    top: 382px;
+    font-family: "Arial Black";
+    font-size: 79px;
+    color: #ffffff;
+  }
+
+  .page-header .text {
+    top: 465px;
+    font-size: 20px;
+    line-height: 26px;
+    color: #0199ec;
+  }
+
+  /* main */
+  .page-main {
+  }
+
+  .about {
+    font-family: "HelveticaLight";
+    text-align: center;
+  }
+
+  .about > .title {
+    margin: 80px 20px 20px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .about > .text {
+    margin: 20px 0 40px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .about > div {
+    padding: 0px;
+  }
+
+
+  .about .item {
+    display: block;
+    height: 60px;
+    margin-top: 225px;
+    padding: 22px;
+    font-family: "HelveticaRegular";
+    font-size: 12px;
+    color: #000000;
+    text-transform: uppercase;
+    background-color: #eaeaeb;
+  }
+
+  .about .item:hover {
+    text-decoration: none;
+    background-color: #f5f5f5;
+  }
+
+  .about__team:before {
+    background: url(../img/about__team--bg.jpg) 50% 30% no-repeat;
+  }
+
+  .about__expo:before {
+    background: url(../img/about__expo--bg.jpg) 50% 30% no-repeat;
+  }
+
+  .about__reviews:before {
+    background: url(../img/about__reviews--bg.jpg) 50% 10% no-repeat;
+  }
+
+  .about__team:before,
+  .about__expo:before,
+  .about__reviews:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 225px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    opacity: 0.9;
+  }
+
+  .about__team:hover:before,
+  .about__expo:hover:before,
+  .about__reviews:hover:before {
+    opacity: 1;
+  }
+
+  /* garden */
+  .garden {
+    margin-top: 80px;
+    text-align: center;
+  }
+
+  .garden__description .title,
+  .garden__description .text {
+    margin-bottom: 40px;
+  }
+
+  .garden__description .title {
+    font-family: "HelveticaLight";
+    font-size: 20px;
+  }
+
+  .garden__description .text {
+    color: #888888;
+    text-align: left;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #65abd0;
+    text-decoration: none;
+    color: #f5f5f5;
+    border-radius: 2px;
+    border: none;
+  }
+
+  .button:hover {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .garden .slider {
+    margin-bottom: 20px;
+  }
+
+  .garden .slider-nav{
+    position: absolute;
+    right: 15px;
+    bottom: 20px;
+  }
+
+  /* ready solution */
+  .ready-solution {
+    margin-top: 80px;
+    text-align: left;
+  }
+
+  .ready-solution .title,
+  .ready-solution .text {
+    margin-bottom: 40px;
+  }
+
+  .ready-solution .title {
+    font-family: "HelveticaLight";
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .ready-solution .text {
+    color: #888888;
+  }
+
+  /* feedback */
+  .feedback:before {
+    content: "";
+    position: absolute;
+    top: -220px;
+    left: 0;
+    width: 100%;
+    height: 220px;
+    background: #000000 url(../img/bg_feedback.jpg) 50% 50% no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+
+  .feedback {
+    position: relative;
+    margin-top: 300px;
+    padding: 20px 0;
+    background-color: #e5e5e5;
+    text-align: center;
+  }
+
+  .feedback .title {
+    font-family: "HelveticaLight";
+    font-size: 20px;
+  }
+
+  .feedback .text {
+    padding-top: 20px;
+  }
+
+  #feedback-mail {
+    margin-top: 10px;
+    padding: 10px 20px;
+    min-width: 220px;
+    border: none;
+    border-radius: 2px;
+  }
+
+  #feedback-button {
+    margin-top: 10px;
+  }
+
+  /* contacts */
+  .contacts {
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .contacts .title {
+    font-family: "HelveticaLight";
+    font-size: 20px;
+  }
+
+  .contacts .text {
+    padding-top: 20px;
+    line-height: 14px;
+    color: #878787;
+  }
+
+  .contacts .map {
+    margin-top: 20px;
+    height: 255px;
+  }
+
+  /* footer */
+  /* social */
+  .social {
+    padding: 40px 0;
+    text-align: center;
+  }
+
+  .facebook,
+  .twitter,
+  .vkontakte {
+    padding: 0 25px;
+    opacity: 0.7;
+  }
+
+  .facebook:hover,
+  .twitter:hover,
+  .vkontakte:hover {
+    opacity: 0.9;
+  }
+
+  .facebook:after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: transparent url(../img/fb.png) no-repeat 50% 50%;
+  }
+
+  .twitter:after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: transparent url(../img/twitter.png) no-repeat 50% 50%;
+  }
+
+  .vkontakte:after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: transparent url(../img/vk.png) no-repeat 50% 50%;
+  }
+
+
 }

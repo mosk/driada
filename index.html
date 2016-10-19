@@ -31,7 +31,7 @@
 
           <div class="col-xs-4 col-xs-pull-8">
             <div class="page-header__contacts">
-              <a href="#" class="button hidden-xs">Закажите бесплатный звонок!</a><br>
+              <a href="#" class="button hidden-xs">Закажите бесплатный звонок!</a><br class="hidden-xs">
               <a href="tel:+78127481404" class="phone">8 (812) 748&#8209;14&#8209;04</a>
             </div>
           </div>
@@ -43,68 +43,61 @@
     <div class="container">
       <div class="row">
         <ul class="services">
-          <li class="services__item services__design col-xs-6 col-md-3">Проектирование</li>
-          <li class="services__item services__beautification col-xs-6 col-md-3">Благоустройство</li>
-          <li class="services__item services__greening col-xs-6 col-md-3">Озеленение</li>
-          <li class="services__item services__gardening col-xs-6 col-md-3">Уход за садом</li>
+          <li class="services__item services__design col-xs-6 col-sm-3">Проектирование</li>
+          <li class="services__item services__beautification col-xs-6 col-sm-3">Благоустройство</li>
+          <li class="services__item services__greening col-xs-6 col-sm-3">Озеленение</li>
+          <li class="services__item services__gardening col-xs-6 col-sm-3">Уход за садом</li>
         </ul>
-        <h2 class="title">Driada</h2>
-        <p class="text">Создаём, преображаем, ухаживаем</p>
       </div>
     </div>
+
+    <h2 class="title">Driada</h2>
+    <p class="text">Создаём, преображаем, ухаживаем</p>
   </header>
 
   <main class="page-main">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <section class="about">
-          <h2 class="title">Мы студия ландшафтного дизайна<br>основанная в 2007 году в городе Санкт-Петербурге.</h2>
-          <h1 class="text">Предоставляем услуги высокого качества по благоустройству,<br>проектированию, озеленению и уходу за вашим садом.</h1>
-          <div class="col-xs-12 col-md-4">
-            <a class="about__team item" href="#">
-              <figure>
-                <img src="img/about__team--bg.jpg">
-                <figcaption class="text">Команда профессионалов</figcaption>
-              </figure>
-            </a>
+          <h2 class="title">Мы студия ландшафтного дизайна<br>основанная в 2007 году в&nbsp;городе&nbsp;Санкт&#8209;Петербурге.</h2>
+          <h1 class="text">Предоставляем услуги высокого качества по&nbsp;благоустройству,<br>проектированию, озеленению и уходу за вашим садом.</h1>
+          <div class="col-xs-12 col-sm-4">
+            <a class="item about__team" href="#">Команда профессионалов</a>
           </div>
 
-          <div class="col-xs-12 col-md-4">
-            <a class="about__expo item" href="#">
-              <figure>
-                <img src="img/about__team--bg.jpg">
-                <figcaption class="text">Мы на международных выставках</figcaption>
-              </figure>
-            </a>
+          <div class="col-xs-12 col-sm-4">
+            <a class="item about__expo" href="#">Мы на международных выставках</a>
           </div>
 
-          <div class="col-xs-12 col-md-4">
-            <a class="about__reviews item" href="#">
-              <figure>
-                <img src="img/about__team--bg.jpg">
-                <figcaption class="text">Отзывы о нас</figcaption>
-              </figure>
-            </a>
+          <div class="col-xs-12 col-sm-4">
+            <a class="item about__reviews" href="#">Отзывы о нас</a>
           </div>
         </section>
       </div>
     </div>
 
     <div class="container">
-      <div class="row">
-        <section class="garden">
+      <section class="garden">
+        <div class="row">
           <div class="col-xs-12 col-md-4 col-md-push-6">
             <div class="garden__description">
               <h2 class="title">Сад с прудом</h2>
-              <p class="text">Полное воплощение проекта под ключ. Строительство искусственного водоема площадью зеркала 300 м2 с зарыблением. Строительство декоративного мостика, освещение, полив, ливневая канализация, посадка растений, уход.</p>
-              <a href="projects.html" class="button">Все проекты</a>
+              <p class="text">Полное воплощение проекта под&nbsp;ключ. Строительство искусственного водоема площадью зеркала 300&nbsp;м2 с&nbsp;зарыблением. Строительство декоративного мостика, освещение, полив, ливневая канализация, посадка растений, уход.</p>
             </div>
           </div>
 
           <div class="col-xs-12 col-md-6 col-md-pull-4">
             <div class="slider">
-              <div class="slider__item">
-                <img src="img/garden__slider.jpg" alt="Фотография сада с прудом">
+              <div id="owl-demo" class="slider__item owl-theme owl-carousel">
+                <div class="item">
+                  <img src="img/garden__slider.jpg" alt="Фотография сада с прудом">
+                </div>
+                <div class="item">
+                  <img src="img/garden__slider.jpg" alt="Фотография сада с прудом">
+                </div>
+                <div class="item">
+                  <img src="img/garden__slider.jpg" alt="Фотография сада с прудом">
+                </div>
               </div>
               <div class="slider-nav">
                 <button class="slider__button slider__button--prev">туда</button>
@@ -121,15 +114,20 @@
               </figcaption>
             </figure>
           </div>
-        </section>
-      </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-6 col-md-offset-6">
+            <a href="projects.html" class="button">Все проекты</a>
+          </div>
+        </div>
+      </section>
     </div>
 
     <div class="container">
       <div class="row">
         <section class="ready-solution">
           <div class="col-xs-12 col-md-6">
-            <h2 class="title">Готовые решения <br>для вашего сада</h2>
+            <h2 class="title">Готовые решения для&nbsp;вашего&nbsp;сада</h2>
             <p class="text">Мы предлагаем услугу быстрого озеленения и ландшафтного дизайна с готовыми композиционными решениями из растений, камней, отсыпки, декоративных элементов и газона.</p>
             <a href="services.html" class="button">Все варианты</a>
           </div>
@@ -155,7 +153,7 @@
       <div class="container">
         <div class="row">
           <label for="feedback-mail">
-            <h3 class="title">Первая консультация и выезд дизайнера бесплатно</h3>
+            <h3 class="title">Первая консультация и&nbsp;выезд&nbsp;дизайнера бесплатно</h3>
             <form action="#" class="feedback-form">
               <div class="col-xs-12 col-md-4">
                 <p class="text">Напишите нам и мы вам перезвоним</p>
@@ -164,7 +162,7 @@
                 <input type="text" name="feedback-mail" id="feedback-mail">
               </div>
               <div class="col-xs-12 col-md-4">
-                <input type="submit" name="feedback-button" id="feedback-button" value="отправить">
+                <input class="button" type="submit" name="feedback-button" id="feedback-button" value="Отправить">
               </div>
             </form>
           </label>
@@ -172,21 +170,23 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="contacts">
           <div class="contacts-info">
             <h3 class="title">Свяжитесь с нами</h3>
             <p class="text">194356,<br>
-            г. Санкт-Петербург, ул. Есенина,<br>
-            д, 18, кор. 2, офис 226<br>
-            телефон +7 (812) 748-17-04<br>
+            г.&nbsp;Санкт-Петербург, ул.&nbsp;Есенина,<br>
+            д, 18, кор.&nbsp;2, офис 226<br>
+            телефон: +7 (812) 748-17-04<br>
             e-mail: info@driada.ru</p>
-            <p class="text"><b>Мы рады видеть Вас у нас в офисе!</b><br>
+            <p class="text"><b>Мы рады видеть&nbsp;Вас у&nbsp;нас в&nbsp;офисе!</b><br>
             с пн.-пт. с 11-19</p>
           </div>
           <div class="col-md-6 col-xs-12">
-            <div class="map">здесь будет карта!</div>
+            <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d620.6425483497993!2d-0.15732306902056842!3d51.52110087053616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ace9a2e67d7%3A0xd458de8d0fdc498e!2zQmFrZXIgU3QsIE1hcnlsZWJvbmUsIExvbmRvbiwg0JLQtdC70LjQutC-0LHRgNC40YLQsNC90LjRjw!5e0!3m2!1sru!2sru!4v1476874001873" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
           </div>
           <div class="col-md-6 hidden-xs hidden-sm">
             <div class="contacts__office">Фотография нашего офиса</div>
