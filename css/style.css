@@ -313,7 +313,54 @@ img {
     position: absolute;
     right: 15px;
     bottom: 20px;
+    font-size: 0px;
+    background: rgba(255, 255, 255, 0.5);
   }
+
+  .slider__button {
+    width: 33px;
+    height: 33px;
+    border: none;
+    background-color: #ffffff;
+  }
+
+  .slider__button:nth-child(2n) {
+    margin-left: 1px;
+  }
+
+  .slider__button:hover {
+    background: rgba(255, 255, 255, 0.75);
+  }
+
+  .slider__button:active {
+    background: rgba(128, 128, 128, 0.95);
+  }
+
+  .slider__button:focus {
+    background: rgba(192, 192, 192, 0.95);
+    outline: none;
+  }
+
+  .slider__button:after {
+    content: "";
+    position: absolute;
+    height: 33px;
+    width: 33px;
+    background: transparent url(../img/arrow.png) 50% 50% no-repeat;
+  }
+
+  .slider__button:first-child:after {
+    top: 0;
+    left: 0;
+  }
+
+  .slider__button:nth-child(2n):after {
+    top: 0;
+    right: 0;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
 
   /* ready solution */
   .ready-solution {
@@ -444,5 +491,28 @@ img {
     background: transparent url(../img/vk.png) no-repeat 50% 50%;
   }
 
+ /* owl */
+  #owl-demo .item{
+    background: #3fbf79;
+    padding: 30px 0px;
+    margin: 10px;
+    color: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+  }
+  .customNavigation{
+    text-align: center;
+  }
+  //use styles below to disable ugly selection
+  .customNavigation a{
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
 
 }

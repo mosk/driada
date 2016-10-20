@@ -5,6 +5,7 @@
   <title>Дриада | Главная страница</title>
   <link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
 </head>
 <body>
   <header class="page-header">
@@ -88,20 +89,14 @@
 
           <div class="col-xs-12 col-md-6 col-md-pull-4">
             <div class="slider">
-              <div id="owl-demo" class="slider__item owl-theme owl-carousel">
-                <div class="item">
-                  <img src="img/garden__slider.jpg" alt="Фотография сада с прудом">
-                </div>
-                <div class="item">
-                  <img src="img/garden__slider.jpg" alt="Фотография сада с прудом">
-                </div>
-                <div class="item">
-                  <img src="img/garden__slider.jpg" alt="Фотография сада с прудом">
-                </div>
+              <div id="owl-demo" class="owl-theme owl-carousel">
+                <img src="img/garden__slider.jpg" alt="Фотография сада с прудом">
+                <img src="img/garden__slider.jpg" alt="Фотография сада с прудом">
+                <img src="img/garden__slider.jpg" alt="Фотография сада с прудом">
               </div>
               <div class="slider-nav">
-                <button class="slider__button slider__button--prev">туда</button>
-                <button class="slider__button slider__button--next">сюда</button>
+                <button class="slider__button prev text-hide">назад</button>
+                <button class="slider__button next text-hide">далее</button>
               </div>
             </div>
           </div>
@@ -213,5 +208,33 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/jquery-3.1.1.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+
+      var owl = $("#owl-demo");
+
+      owl.owlCarousel({
+          items : 1, //10 items above 1000px browser width
+          itemsDesktop : [1000,1], //5 items between 1000px and 901px
+          itemsDesktopSmall : [900,1], // betweem 900px and 601px
+          itemsTablet: [600,1], //2 items between 600 and 0
+          itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+      });
+
+      // Custom Navigation Events
+      $(".next").click(function(){
+        owl.trigger('owl.next');
+      })
+      $(".prev").click(function(){
+        owl.trigger('owl.prev');
+      })
+
+    });
+  </script>
+
+  <script src="js/owl.carousel.min.js"></script>
 </body>
 </html>
