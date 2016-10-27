@@ -140,11 +140,12 @@ img {
   .text {
     margin-top: 0;
   }
-  .page-header .title,
-  .page-header .text {
+  .page-header__title,
+  .page-header__text {
     position: absolute;
     left: 50%;
     width: 100%;
+    margin-top: 0;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
@@ -152,13 +153,13 @@ img {
     text-transform: uppercase;
     text-align: center;
   }
-  .page-header .title {
+  .page-header__title {
     top: 382px;
     font-family: "Arial Black";
     font-size: 79px;
     color: #ffffff;
   }
-  .page-header .text {
+  .page-header__text {
     top: 465px;
     font-size: 20px;
     line-height: 26px;
@@ -423,39 +424,8 @@ img {
     height: 20px;
     background: transparent url(../img/vk.png) no-repeat 50% 50%;
   }
-  /* owl */
-  #owl-demo .item {
-    background: #3fbf79;
-    padding: 30px 0px;
-    margin: 10px;
-    color: #FFF;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    text-align: center;
-  }
-  .customNavigation {
-    text-align: center;
-  }
-  .customNavigation a {
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  }
-  /* настрой меня! */
-  .ready-solution .owl-pagination {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
-  }
 }
+
 /* min-width 768px */
 @media (min-width: 768px) {
   .page-header {
@@ -463,8 +433,8 @@ img {
     -webkit-background-size: cover;
     background-size: cover;
   }
-  .garden__description .title,
-  .garden__description .text {
+  .garden__description__title,
+  .garden__description__text {
     margin-bottom: 20px;
   }
   .garden {
@@ -550,6 +520,21 @@ img {
     text-transform: uppercase;
     color: #ffffff;
   }
+  .menu__link a:hover,
+  .menu__link a:active {
+    text-decoration: none;
+  }
+  .menu__link--active {
+    border-bottom: 2px solid #ffffff;
+  }
+  .page-header__title {
+    top: 530px;
+    font-size: 154px;
+  }
+  .page-header__text {
+    top: 700px;
+    font-size: 30px;
+  }
   .services__item {
     padding-top: 250px;
   }
@@ -568,14 +553,6 @@ img {
   }
   .services__gardening:before {
     background: url(../img/services__gardening_l.png) 50% 50% no-repeat;
-  }
-  .page-header .title {
-    top: 530px;
-    font-size: 154px;
-  }
-  .page-header .text {
-    top: 700px;
-    font-size: 30px;
   }
   .about > .title,
   .about > .text {
@@ -708,163 +685,51 @@ img {
     display: flex;
     align-items: baseline;
   }
+
+  .page-footer .copyright {
+    font-family: "HelveticaMedium", Arial, sans-serif;
+  }
   .social {
     padding: 0;
+    font-family: "HelveticaMedium", Arial, sans-serif;
     text-align: right;
   }
   .social .text {
     display: inline-block;
   }
 }
-/*
-*   Owl Carousel Owl Demo Theme
-* v1.3.3
-*/
-.owl-theme .owl-controls {
-  margin-top: 10px;
-  text-align: center;
-}
-/* Styling Next and Prev buttons */
-.owl-theme .owl-controls .owl-buttons div {
-  color: #FFF;
-  display: inline-block;
-  zoom: 1;
-  *display: inline;
-  /*IE7 life-saver */
-  margin: 5px;
-  padding: 3px 10px;
-  font-size: 12px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
-  background: #869791;
-  filter: alpha(opacity=50);
-  /*IE7 fix*/
-  opacity: 0.5;
-}
-/* Clickable class fix problem with hover on touch devices */
-/* Use it for non-touch hover action */
-.owl-theme .owl-controls.clickable .owl-buttons div:hover {
-  filter: alpha(opacity=100);
-  /*IE7 fix*/
-  opacity: 1;
-  text-decoration: none;
-}
-/* Styling Pagination*/
-.owl-theme .owl-controls .owl-page {
-  display: inline-block;
-  zoom: 1;
-  *display: inline;
-  /*IE7 life-saver */
-}
-.owl-theme .owl-controls .owl-page span {
-  display: block;
-  width: 9px;
-  height: 9px;
-  margin: 5px 7px;
-  filter: alpha(opacity=50);
-  /*IE7 fix*/
-  opacity: 0.5;
-  border: 2px solid #ffffff;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
-  background: transparent;
-}
-.owl-theme .owl-controls .owl-page.active span,
-.owl-theme .owl-controls.clickable .owl-page:hover span {
-  filter: alpha(opacity=100);
-  /*IE7 fix*/
-  opacity: 1;
-}
-.owl-theme .owl-controls .owl-page.active span {
-  background: #ffffff;
-}
-/* If PaginationNumbers is true */
-.owl-theme .owl-controls .owl-page span.owl-numbers {
-  height: auto;
-  width: auto;
-  color: #FFF;
-  padding: 2px 10px;
-  font-size: 12px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
-}
-/* preloading images */
-.owl-item.loading {
-  min-height: 150px;
-  background: url(AjaxLoader.gif) no-repeat center center;
-}
 
-/*
- *  Core Owl Carousel CSS File
- *  v1.3.3
- */
+/* projects.html */
+/* min-width 360px */
+@media (min-width: 360px) {
+  .projects-page .page-header {
+    background: #001500 url(../img/bg_page-header_projects.jpg) no-repeat left 50%;
+  }
 
-/* clearfix */
-.owl-carousel .owl-wrapper:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
-}
-/* display none until init */
-.owl-carousel{
-  display: none;
-  position: relative;
-  width: 100%;
-  -ms-touch-action: pan-y;
-}
-.owl-carousel .owl-wrapper{
-  display: none;
-  position: relative;
-  -webkit-transform: translate3d(0px, 0px, 0px);
-}
-.owl-carousel .owl-wrapper-outer{
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-}
-.owl-carousel .owl-wrapper-outer.autoHeight{
-  -webkit-transition: height 500ms ease-in-out;
-  -moz-transition: height 500ms ease-in-out;
-  -ms-transition: height 500ms ease-in-out;
-  -o-transition: height 500ms ease-in-out;
-  transition: height 500ms ease-in-out;
-}
+  .projects-page .promo {
+    text-align: left;
+    color: #ffffff;
+    padding: 60px 15px 0;
+  }
 
-.owl-carousel .owl-item{
-  float: left;
-}
-.owl-controls .owl-page,
-.owl-controls .owl-buttons div{
-  cursor: pointer;
-}
-.owl-controls {
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
+  .projects-page .promo__title {
+    font-size: 36px;
+  }
 
-/* mouse grab icon */
-.grabbing {
-    cursor:url(../img/grabbing.png) 8 8, move;
-}
+  .projects-page .promo__text {
+    font-size: 18px;
+  }
 
-/* fix */
-.owl-carousel  .owl-wrapper,
-.owl-carousel  .owl-item{
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility:    hidden;
-  -ms-backface-visibility:     hidden;
-  -webkit-transform: translate3d(0,0,0);
-  -moz-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-}
+  .projects-list {
+    padding: 20px 15px 0;
+    font-family: "HelveticaThin", Arial, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
 
+  .projects-list__title {
+
+  }
+
+
+}

@@ -6,33 +6,33 @@
   <link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
-<body>
+<body class="projects-page">
   <header class="page-header">
     <div class="wrapper">
       <div class="container">
         <div class="row">
 
           <div class="col-xs-4 col-xs-push-4">
-            <a href="index.html" class="logo"><img src="img/logo.png" width="72" alt="Студия ландшафтного дизайна «Дриада»"></a>
+            <a href="#" class="logo"><img src="img/logo.png" alt="Студия ландшафтного дизайна «Дриада»"></a>
           </div>
 
           <div class="col-xs-4 col-xs-push-4">
-            <nav class="nav">
+            <nav class="menu">
               <ul>
-                <li class="nav__link"><a href="index.html">О нас</a></li>
-                <li class="nav__link nav__link--active"><a href="projects.html">Проекты</a></li>
-                <li class="nav__link"><a href="services.html">Услуги</a></li>
-                <li class="nav__link"><a href="#">Растения</a></li>
-                <li class="nav__link"><a href="#">Цены</a></li>
-                <li class="nav__link"><a href="#">Контакты</a></li>
+                <li class="menu__link"><a href="index.html">О нас</a></li>
+                <li class="menu__link menu__link--active"><a href="#">Проекты</a></li>
+                <li class="menu__link"><a href="services.html">Услуги</a></li>
+                <li class="menu__link"><a href="#">Растения</a></li>
+                <li class="menu__link"><a href="#">Цены</a></li>
+                <li class="menu__link"><a href="#">Контакты</a></li>
               </ul>
             </nav>
           </div>
 
           <div class="col-xs-4 col-xs-pull-8">
             <div class="page-header__contacts">
-              <a href="tel:+78127481404" class="page-header__phone">8 (812) 748-14-04</a><br>
-              <a href="#" class="page-header__button">Закажите бесплатный звонок!</a>
+              <a href="#" class="call hidden-xs hidden-sm">Закажите бесплатный звонок!</a><br class="hidden-xs hidden-sm">
+              <a href="tel:+78127481404" class="phone">8 (812) 748&#8209;14&#8209;04</a>
             </div>
           </div>
 
@@ -43,9 +43,8 @@
     <div class="container">
       <div class="row">
         <div class="promo">
-          <h1 class="title">Портфолио частных <br>участков</h1>
-          <p class="text">Портфолио общественных территорий.</p>
-          <a href="#main" class="promo__button hidden">Посмотреть</a>
+          <h1 class="promo__title">Портфолио частных <br>участков</h1>
+          <p class="promo__text">Портфолио общественных территорий.</p>
         </div>
         <h2 class="page-header__title">Driada</h2>
       </div>
@@ -56,50 +55,18 @@
     <div class="container">
       <div class="row">
         <div class="projects-list">
-          <h2 class="title">Наши проекты</h2>
-          <ul class="slider">
-
-            <li class="slider__item projects-list__item col-xs-12 col-md-4">
-              <a href="#">посёлок Сосновка
-                <img src="img/projects-list__item--1" alt="фотография проекта">
-              </a>
-            </li>
-
-            <li class="slider__item projects-list__item col-xs-12 col-md-4">
-              <a href="projects__2.html">посёлок Лосево
-                <img src="img/projects-list__item--2" alt="фотография проекта">
-              </a>
-            </li>
-
-            <li class="slider__item projects-list__item col-xs-12 col-md-4">
-              <a href="#">дачный участок Гатчина
-                <img src="img/projects-list__item--3" alt="фотография проекта">
-              </a>
-            </li>
-
-            <li class="slider__item projects-list__item col-xs-12 col-md-4">
-              <a href="#">усадьба Романовка
-                <img src="img/projects-list__item--4" alt="фотография проекта">
-              </a>
-            </li>
-
-            <li class="slider__item projects-list__item col-xs-12 col-md-4">
-              <a href="#">посёлок Малиново
-                <img src="img/projects-list__item--5" alt="фотография проекта">
-              </a>
-            </li>
-
-            <li class="slider__item projects-list__item col-xs-12 col-md-4">
-              <a href="#">посёлок Зелёная Роща
-                <img src="img/projects-list__item--6" alt="фотография проекта">
-              </a>
-            </li>
-
-          </ul>
-          <div class="slider-nav">
-            <button class="slider__button slider__button--prev">туда</button>
-            <button class="slider__button slider__button--next">сюда</button>
-          </div>
+          <h2 class="projects-list__title">Наши проекты</h2>
+            <div class="slider">
+              <div id="carousel" class="owl-carousel">
+                <img src="img/garden__slider.jpg" alt="Фотография сада с прудом №1">
+                <img src="img/garden__slider.jpg" alt="Фотография сада с прудом №2">
+                <img src="img/garden__slider.jpg" alt="Фотография сада с прудом №3">
+              </div>
+              <div class="slider-nav">
+                <button class="slider__button prev text-hide">назад</button>
+                <button class="slider__button next text-hide">далее</button>
+              </div>
+            </div>
         </div>
       </div>
     </div>
@@ -118,5 +85,33 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/jquery-3.1.1.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+
+      var owl = $("#carousel");
+
+      owl.owlCarousel({
+          items : 1, //10 items above 1000px browser width
+          itemsDesktop : [1000,1], //5 items between 1000px and 901px
+          itemsDesktopSmall : [900,1], // betweem 900px and 601px
+          itemsTablet: [600,1], //2 items between 600 and 0
+          itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+      });
+
+      // Custom Navigation Events
+      $(".next").click(function(){
+        owl.trigger('owl.next');
+      })
+      $(".prev").click(function(){
+        owl.trigger('owl.prev');
+      })
+
+    });
+  </script>
+
+  <script src="js/owl.carousel.min.js"></script>
 </body>
 </html>
