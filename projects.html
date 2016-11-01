@@ -3,101 +3,164 @@
 <head>
   <meta charset="UTF-8">
   <title>Дриада | Проекты</title>
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css">
-  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/owl.css" rel="stylesheet">
 </head>
-<body class="projects-page">
-  <header class="page-header">
+<body>
+  <header class="page-header page-header--bg-projects-page">
     <div class="wrapper">
       <div class="container">
         <div class="row">
-
           <div class="col-xs-4 col-xs-push-4">
-            <a href="#" class="logo"><img src="img/logo.png" alt="Студия ландшафтного дизайна «Дриада»"></a>
+            <a class="logo" href="#"><img alt="Студия ландшафтного дизайна «Дриада»" src="img/logo.png"></a>
           </div>
-
           <div class="col-xs-4 col-xs-push-4">
             <nav class="menu">
               <ul>
-                <li class="menu__link"><a href="index.html">О нас</a></li>
-                <li class="menu__link menu__link--active"><a href="#">Проекты</a></li>
-                <li class="menu__link"><a href="services.html">Услуги</a></li>
-                <li class="menu__link"><a href="#">Растения</a></li>
-                <li class="menu__link"><a href="#">Цены</a></li>
-                <li class="menu__link"><a href="#">Контакты</a></li>
+                <li class="menu__link">
+                  <a href="index.html">О нас</a>
+                </li>
+                <li class="menu__link menu__link--active">
+                  <a href="#">Проекты</a>
+                </li>
+                <li class="menu__link">
+                  <a href="services.html">Услуги</a>
+                </li>
+                <li class="menu__link">
+                  <a href="#">Растения</a>
+                </li>
+                <li class="menu__link">
+                  <a href="#">Цены</a>
+                </li>
+                <li class="menu__link">
+                  <a href="#">Контакты</a>
+                </li>
               </ul>
             </nav>
           </div>
-
           <div class="col-xs-4 col-xs-pull-8">
             <div class="page-header__contacts">
-              <a href="#" class="call hidden-xs hidden-sm">Закажите бесплатный звонок!</a><br class="hidden-xs hidden-sm">
-              <a href="tel:+78127481404" class="phone">8 (812) 748&#8209;14&#8209;04</a>
+              <a class="call hidden-xs hidden-sm" href="#">Закажите бесплатный звонок!</a><br class="hidden-xs hidden-sm">
+              <a class="phone" href="tel:+78127481404">8 (812) 748&#8209;14&#8209;04</a>
             </div>
           </div>
-
         </div>
       </div>
     </div>
-
     <div class="container">
       <div class="row">
         <div class="promo">
-          <h1 class="promo__title">Портфолио частных <br>участков</h1>
+          <h1 class="promo__title">Портфолио частных<br>
+          участков</h1>
           <p class="promo__text">Портфолио общественных территорий.</p>
         </div>
         <h2 class="page-header__title">Driada</h2>
       </div>
     </div>
   </header>
-
   <main class="page-main">
     <div class="container">
       <div class="row">
         <div class="projects-list">
           <h2 class="projects-list__title">Наши проекты</h2>
-            <div class="slider">
-              <div id="carousel" class="owl-carousel">
-                <img src="img/garden__slider.jpg" alt="Фотография сада с прудом №1">
-                <img src="img/garden__slider.jpg" alt="Фотография сада с прудом №2">
-                <img src="img/garden__slider.jpg" alt="Фотография сада с прудом №3">
-              </div>
-              <div class="slider-nav">
-                <button class="slider__button prev text-hide">назад</button>
-                <button class="slider__button next text-hide">далее</button>
+          <div class="slider">
+            <div class="owl-carousel carousel__projects--min" id="carousel__projects--min">
+              <figure class="slider__item">
+                <img alt="Фото №1" src="img/projects-list__img--1.jpg" title="посёлок Сосновка">
+                <figcaption class="slider__item-desc">посёлок Сосновка</figcaption>
+              </figure>
+              <figure class="slider__item">
+                <img alt="Фото №2" src="img/projects-list__img--2.jpg" title="посёлок Лосево">
+                <figcaption class="slider__item-desc">посёлок Лосево</figcaption>
+              </figure>
+              <figure class="slider__item">
+                <img alt="Фото №3" src="img/projects-list__img--3.jpg" title="дачный участок Гатчина">
+                <figcaption class="slider__item-desc">дачный участок Гатчина</figcaption>
+              </figure>
+              <figure class="slider__item">
+                <img alt="Фото №4" src="img/projects-list__img--4.jpg" title="усадьба Романовка">
+                <figcaption class="slider__item-desc">усадьба Романовка</figcaption>
+              </figure>
+              <figure class="slider__item">
+                <img alt="Фото №5" src="img/projects-list__img--5.jpg" title="посёлок Малиново">
+                <figcaption class="slider__item-desc">посёлок Малиново</figcaption>
+              </figure>
+              <figure class="slider__item">
+                <img alt="Фото №6" src="img/projects-list__img--6.jpg" title="посёлок Зелёная Роща">
+                <figcaption class="slider__item-desc">посёлок Зелёная Роща</figcaption>
+              </figure>
+            </div>
+
+            <!--
+            <div class="owl-carousel carousel__projects--max" id="carousel__projects--max">
+              <div class="wrap">
+                <figure class="slider__item">
+                <img alt="Фото №1" src="img/projects-list__img--1.jpg" title="посёлок Сосновка">
+                <figcaption class="slider__item-desc">посёлок Сосновка</figcaption>
+              </figure>
+              <figure class="slider__item">
+                <img alt="Фото №2" src="img/projects-list__img--2.jpg" title="посёлок Лосево">
+                <figcaption class="slider__item-desc">посёлок Лосево</figcaption>
+              </figure>
+              <figure class="slider__item">
+                <img alt="Фото №3" src="img/projects-list__img--3.jpg" title="дачный участок Гатчина">
+                <figcaption class="slider__item-desc">дачный участок Гатчина</figcaption>
+              </figure>
+              <figure class="slider__item">
+                <img alt="Фото №4" src="img/projects-list__img--4.jpg" title="усадьба Романовка">
+                <figcaption class="slider__item-desc">усадьба Романовка</figcaption>
+              </figure>
+              <figure class="slider__item">
+                <img alt="Фото №5" src="img/projects-list__img--5.jpg" title="посёлок Малиново">
+                <figcaption class="slider__item-desc">посёлок Малиново</figcaption>
+              </figure>
+              <figure class="slider__item">
+                <img alt="Фото №6" src="img/projects-list__img--6.jpg" title="посёлок Зелёная Роща">
+                <figcaption class="slider__item-desc">посёлок Зелёная Роща</figcaption>
+              </figure>
               </div>
             </div>
+            -->
+
+            <div class="slider-nav">
+              <button class="slider__button prev text-hide">назад</button>
+              <button class="slider__button next text-hide">далее</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </main>
-
   <footer class="page-footer">
-    <div class="col-md-6 hidden-xs hidden-sm">
-      <p class="copyright">© 2016 – Все права защищены.</p>
-    </div>
-    <div class="col-xs-12 col-md-6">
-      <div class="social">
-        <p class="text hidden-xs hidden-sm">Мы в соцсетях:</p>
-        <a href="facebook.com" class="facebook text-hide">фейсбук</a>
-        <a href="twitter.com" class="twitter text-hide">твиттер</a>
-        <a href="vk.com" class="vkontakte text-hide">вконтакте</a>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 hidden-xs hidden-sm">
+          <p class="copyright">© 2016 – Все права защищены.</p>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="social">
+            <p class="social__text hidden-xs hidden-sm">Мы в соцсетях:</p>
+            <a class="social__facebook text-hide" href="#">фейсбук</a>
+            <a class="social__twitter text-hide" href="#">твиттер</a>
+            <a class="social__vkontakte text-hide" href="#">вконтакте</a>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
-
-  <script src="js/jquery-3.1.1.min.js"></script>
-
+  <script src="js/jquery-3.1.1.min.js">
+  </script>
   <script>
     $(document).ready(function() {
 
-      var owl = $("#carousel");
+      var owl = $("#carousel__projects--min");
 
       owl.owlCarousel({
-          items : 1, //10 items above 1000px browser width
-          itemsDesktop : [1000,1], //5 items between 1000px and 901px
-          itemsDesktopSmall : [900,1], // betweem 900px and 601px
-          itemsTablet: [600,1], //2 items between 600 and 0
+          items : 4, //10 items above 1000px browser width
+          itemsDesktop : [1000,3], //3 items between 1000px and 901px
+          itemsDesktopSmall : [768,2], // betweem 900px and 601px
+          itemsTablet: [500,1], //2 items between 600 and 0
           itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
       });
 
@@ -112,6 +175,7 @@
     });
   </script>
 
-  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/owl.carousel.js">
+  </script>
 </body>
 </html>
